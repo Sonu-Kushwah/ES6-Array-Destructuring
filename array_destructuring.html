@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Destructuring</title>
+</head>
+<body>
+   <h4>Array Destructuring in ES6</h4>
+   <script>
+    let myprolog=['html','css','javascript','React','Next.js','node js'];
+    //es5
+    let top1=myprolog[0];
+    let top2=myprolog[1];
+    let top3=myprolog[2];
+    let top4=myprolog[3];
+    console.log("My favourite Language is "+ top3);
+
+    //es6
+    console.log(myprolog.length);
+    let [t1,t2,t3,t4,t5]=myprolog;
+    console.log(`My seond favourite language ${t4}`);
+
+    //es6 value skipt
+    let [v1,,,,v5]=myprolog;
+    console.log(`my language is ${v5}`);
+   </script> 
+</body>
+</html>
